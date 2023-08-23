@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+body
+{
+	font-family:Roboto, Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 14px;
+	margin: 0 /* bỏ đẩy lề trên và trái từ body*/;
+	color: #555555;
+	background-color: #F4F3F3;
+}
+h1{ font-size: 24px; color: #2F80ED}
+h2{ font-size: 20px}
+h3{ font-size: 16px}
+.top-bar i{ margin-left: 5px; margin-right: 2px}
+.navbar 
+{ 
+	background-color: white;
+	box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+	padding:10px 0 ;
+	}
+.navbar .container
+{
+	display: flex;
+	justify-content: space-between; /* đẩy các box trong flex theo bề ngang*/
+	align-items: center;/* đẩy các box trong flex center theo trục dọc*/
+}
+.menu ul
+{
+	margin: 0;
+	padding: 0;
+	list-style: none; /* khong chấm đầu dòng*/
+	display: flex
+}
+.menu ul li { position: relative}
+.menu ul li a
+{
+	color: #333;
+	text-decoration: none;
+	padding: 10px 20px;
+	display: block;
+	text-transform:uppercase;
+	font-size: 16px
+}
+.menu ul li a:hover
+{
+	/*background-color:#FFC113*/;
+	border-bottom: 2px solid #FFC113;
+	color:#056CB6
+	}
+
+.menu ul ul
+{
+	display: block;
+	background: #056CB6;
+	position: absolute;
+	left: 0; top: 100%;
+	width: 200px;
+	display: none
+}
+
+.menu ul ul a{ color: #fff; font-size: 14px}
+.menu ul ul a:hover{  background-color: #FFC113;border-bottom: none}
+.menu ul li:hover >ul { display: block}
+
+.menu-footer a{ display: block; text-decoration: none; color: white; padding: 5px 0}
+.menu-footer a:hover{ color: #FFC113}
+
